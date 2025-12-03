@@ -49,7 +49,6 @@ function showDetails() {
         "stroustrup": "images/stroustrup.jpg",
         "juergen": "images/juergen.jpg",
         "krishna": "images/krishna.jpg",
-
         "bill_gates": "images/bill_gates.jpg",
         "steve_jobs": "images/steve_jobs.jpg",
         "elon_musk": "images/elon_musk.jpg",
@@ -59,7 +58,8 @@ function showDetails() {
         "Sundar_Pichai": "images/Sundar_Pichai.jpg",
         "satyanadella": "images/satyanadella.jpg",                
         "AdaLovelace": "images/AdaLovelace.jpg",
-        "madhu": "images/madhu.jpg"
+        "madhu": "images/madhu.jpg",
+        "vaishnavi": "images/vaishnavi.jpg"
     };
 
     // Mapping details
@@ -79,7 +79,8 @@ function showDetails() {
         "tim_berner": "Tim Berners-Lee invented the World Wide Web.",
         "Sundar_Pichai": "Sundar Pichai is the CEO of Google.",
         "satyanadella": "Satya Nadella is the CEO of Microsoft.",
-        "AdaLovelace": "Ada Lovelace was the first computer programmer."
+        "AdaLovelace": "Ada Lovelace was the first computer programmer.",
+        "vaishnavi": "Name: Moturi Vaishnavi , Roll No: 23951A66N5 , Branch: CSE(AI&ML)"
     };
 
     if (name === "") {

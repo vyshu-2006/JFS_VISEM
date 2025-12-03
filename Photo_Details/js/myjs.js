@@ -1,6 +1,37 @@
       
+let selectedName = ""; // Store the selected name
+
+function showConfirmationDialog() {
+    selectedName = document.getElementById("nameSelect").value;
+    
+    if (selectedName === "") {
+        alert("Please select a person from the dropdown first.");
+        return;
+    }
+    
+    let dialog = document.getElementById("confirmationDialog");
+    let message = document.getElementById("dialogMessage");
+    
+    // Get the person's name from the dropdown
+    let dropdownElement = document.getElementById("nameSelect");
+    let displayText = dropdownElement.options[dropdownElement.selectedIndex].text;
+    
+    message.innerHTML = "Are you sure you want to display <strong>" + displayText + "</strong>'s information?";
+    dialog.style.display = "block";
+}
+
+function confirmShowDetails() {
+    document.getElementById("confirmationDialog").style.display = "none";
+    showDetails();
+}
+
+function cancelShowDetails() {
+    document.getElementById("confirmationDialog").style.display = "none";
+    selectedName = "";
+}
+
 function showDetails() {
-    let name = document.getElementById("nameSelect").value;
+    let name = selectedName || document.getElementById("nameSelect").value;
 
     let photo = document.getElementById("photo");
     let info = document.getElementById("infoText");

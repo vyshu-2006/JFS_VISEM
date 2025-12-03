@@ -9,7 +9,7 @@
 
     <h2>Select a Name to Display Photo & Info</h2>   
     <!-- Dropdown -->
-    <select id="nameSelect" onchange="showDetails()" style='height:40px; width:320px;'>
+    <select id="nameSelect" style='height:40px; width:320px;'>
         <option value="">-- Select Name --</option>
 
         <!-- Earlier personalities -->
@@ -33,6 +33,18 @@
         <option value="AdaLovelace">Ada Lovelace (1st Programmer)</option>
         <option value="madhu">Madhu (JFS Trainer, CDC, IARE Hyderabad)</option>
     </select>
+    <button id="confirmBtn" onclick="showConfirmationDialog()" style='height:40px; width:100px; margin-left:10px; font-size:16px; cursor:pointer;'>OK</button>
+
+    <!-- Confirmation Dialog -->
+    <div id="confirmationDialog" class="dialog-overlay" style="display:none;">
+        <div class="dialog-box">
+            <p id="dialogMessage">Are you sure you want to display this person's information?</p>
+            <div class="dialog-buttons">
+                <button id="confirmYes" onclick="confirmShowDetails()">OK</button>
+                <button id="confirmNo" onclick="cancelShowDetails()">Cancel</button>
+            </div>
+        </div>
+    </div>
 
     <div class="container">
 
